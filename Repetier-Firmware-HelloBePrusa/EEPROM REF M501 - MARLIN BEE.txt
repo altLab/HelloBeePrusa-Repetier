@@ -1,0 +1,51 @@
+V37 stored settings retrieved (465 bytes)
+	G21 ; Units in mm
+	M149 C ; Units in Celsius
+
+Filament settings: Disabled
+	M200 D3.00
+	M200 T1 D3.00
+	M200 D0
+
+Steps per unit:
+	M92 X160.00 Y160.00 Z8000.00 E180.00
+
+Maximum feedrates (units/s):
+	M203 X200.00 Y200.00 Z2.00 E20.00
+
+Maximum Acceleration (units/s2):
+	M201 X1000 Y1000 Z10 E10000
+
+Acceleration (units/s2): P<print_accel> R<retract_accel> T<travel_accel>
+	M204 P1000.00 R2000.00 T2000.00
+
+Advanced: S<min_feedrate> T<min_travel_feedrate> B<min_segment_time_ms> X<max_xy_jerk> Z<max_z_jerk> E<max_e_jerk>
+	M205 S0.00 T0.00 B20000 X5.00 Y5.00 Z0.50 E5.00
+
+Home offset:
+	M206 X0.00 Y0.00 Z0.00
+
+Hotend offsets:
+	M218 T1 X67.50 Y0.30
+
+Mesh Bed Leveling:
+	M420 S0 Z0.00
+	G29 S3 X1 Y1 Z0.00000
+	G29 S3 X2 Y1 Z0.00000
+	G29 S3 X3 Y1 Z0.00000
+	G29 S3 X1 Y2 Z0.00000
+	G29 S3 X2 Y2 Z0.00000
+	G29 S3 X3 Y2 Z0.00000
+	G29 S3 X1 Y3 Z0.00000
+	G29 S3 X2 Y3 Z0.00000
+	G29 S3 X3 Y3 Z0.00000
+
+Material heatup parameters:
+	M145 S0 H200 B50 F0
+	M145 S1 H240 B100 F0
+
+PID settings:
+	M301 P18.00 I0.40 D110.00
+
+Linear Advance:
+	M900 K40.00 R0.00
