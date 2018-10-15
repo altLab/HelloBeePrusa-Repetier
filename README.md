@@ -7,3 +7,5 @@ Prusa Bee uses Ramps MKS Gen 1.2
 ![Ramps MKS Gen 1.2](https://github.com/altLab/HelloBeePrusa-Repetier/blob/master/Repetier-Firmware-HelloBePrusa/MKS_GEN-PIN.PNG)
 
 The board connectors for the heating elements uses common VCC instead of Ground
+
+[Modding Process Photo Album](https://goo.gl/photos/9N1MN7bZd2GyDXXm7)
